@@ -89,3 +89,42 @@ main li:nth-child(2){
 main li:nth-child(3){
     background-color: #485676;
 }
+.body{
+ place-content: center;
+     min-height: 100vh;
+    font-family:sans-serif;
+    background-image: 
+    linear-gradient(to bottom,#dcdcdc 50%,#e9e9e9 50% );
+}
+      .circle{
+        place-self: center;
+        width: 60px;
+        height: 60px;
+        border-radius:50% ;
+        border: 4px solid #fff;
+        border-top-color: #b56291;
+        animation: spin 1s linear infinite;
+    }
+    
+    @keyframes spin{
+       to{
+        transform: rotate(360deg);
+       } 
+    }
+.loader2{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+ align-items: center;
+ color: #b56291;
+}
+.w-logo{ 
+ justify-self: center;
+ font-size: 2.5em;
+}
+.line{
+    width:4rem;
+    height: 4px;
+    background-color: #b56291;
+}

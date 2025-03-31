@@ -2,57 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content="5; url=./weather.html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./tailwind/app.css" />
+    <title>DAY-DICT</title>
+    <link rel="stylesheet" href="tailwind/app.css">
   </head>
-   <body>
-    <!-- main -->
-    <main>
-        <form action="#">
-            <input type="search" name="search" id="search-btn" itemid="valueSearch" autocomplete="off">
-            <button>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z"></path></svg>
-            </button>
-        </form>
-
-        <section class="results">
-            <figure class="name">
-                <figcaption id="city">London</figcaption>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M3 3H12.382C12.7607 3 13.107 3.214 13.2764 3.55279L14 5H20C20.5523 5 21 5.44772 21 6V17C21 17.5523 20.5523 18 20 18H13.618C13.2393 18 12.893 17.786 12.7236 17.4472L12  16H5V22H3V3Z"></path></svg>
-            </figure>
-
-            <figure class="temperature" id="temperature">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="140" height="140" fill="currentColor"><path d="M5 16.9297C2.60879 15.5465 1 12.9611 1 10C1 5.58172 4.58172 2 9 2C12.3949 2 15.2959 4.11466 16.4576 7.09864C16.7951 7.0339 17.1436 7 17.5 7C20.5376 7 23 9.46243 23 12.5C23 15.0176 21.3085 17.14 19 17.793V15.6632C20.1825 15.1015 21 13.8962 21 12.5C21 10.567 19.433 9 17.5 9C16.5205 9 15.6351 9.40232 14.9998 10.0507C14.9999 10.0338 15 10.0169 15 10C15 6.68629 12.3137 4 9 4C5.68629 4 3 6.68629 3 10C3 11.777 3.7725 13.3736 5 14.4722V16.9297ZM7 16H9V20H7V16ZM15 16H17V20H15V16ZM11 19H13V23H11V19Z"></path></svg>
-                <figcaption>
-                    <span>31</span>
-                    <sup>o</sup>
-                </figcaption>
-            </figure>
-
-            <p class="description">
-                Overcast clouds
-            </p>
-
-            <ul>
-                <li>
-                    <span>Cloudy</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17 21H7C3.68629 21 1 18.3137 1 15C1 12.3846 2.67346 10.16 5.00804 9.33857C5.0027 9.22639 5 9.11351 5 9C5 5.13401 8.13401 2 12 2C15.866 2 19 5.13401 19 9C19 9.11351 18.9973 9.22639 18.992 9.33857C21.3265 10.16 23 12.3846 23 15C23 18.3137 20.3137 21 17 21Z"></path></svg>
-                    <span>98</span>%
-                </li>
-                <li>
-                    <span>Humidity</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 0.269043L5.63604 6.633C2.12132 10.1477 2.12132 15.8462 5.63604 19.3609C9.15076 22.8756 14.8492 22.8756 18.364 19.3609C21.8787 15.8462 21.8787 10.1477 18.364 6.633L12 0.269043ZM16.2427 10.1714L9.17161 17.2425L7.7574 15.8282L14.8285 8.75718L16.2427 10.1714ZM8.11095 9.11073C8.69674 8.52494 9.64648 8.52494 10.2323 9.11073C10.8181 9.69652 10.8181 10.6463 10.2323 11.232C9.64648 11.8178 8.69674 11.8178 8.11095 11.232C7.52516 10.6463 7.52516 9.69652 8.11095 9.11073ZM15.8891 16.8889C15.3033 17.4747 14.3536 17.4747 13.7678 16.8889C13.182 16.3031 13.182 15.3534 13.7678 14.7676C14.3536 14.1818 15.3033 14.1818 15.8891 14.7676C16.4749 15.3534 16.4749 16.3031 15.8891 16.8889Z"></path></svg>
-                    <span>55</span>%
-                </li>
-                <li>
-                    <span>Pressure</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20 13C20 15.2091 19.1046 17.2091 17.6569 18.6569L19.0711 20.0711C20.8807 18.2614 22 15.7614 22 13 22 7.47715 17.5228 3 12 3 6.47715 3 2 7.47715 2 13 2 15.7614 3.11929 18.2614 4.92893 20.0711L6.34315 18.6569C4.89543 17.2091 4 15.2091 4 13 4 8.58172 7.58172 5 12 5 16.4183 5 20 8.58172 20 13ZM15.293 8.29297 10.5 12.5 12.5 14.5 16.7072 9.70718 15.293 8.29297Z"></path></svg>
-                    <span>1001</span>hpa 
-                </li>
-            </ul>
-        </section>
-    </main>
-    <script src="app.js"></script>
+  <body class="body">
+    <div class="cover">
+      <div class="circle"></div>
+    <div class="loader2">
+      <div class="line"></div>
+      <h2 class="w-logo">DAY - DICT</h2>
+      <div class="line"></div>
+    </div>
+  </div>
   </body>
 </html>
