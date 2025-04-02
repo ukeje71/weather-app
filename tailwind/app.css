@@ -1,130 +1,21 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 body{
-    display: flex;
-    min-height: 100vh;
-    align-items: center;
-    justify-content: center;
-    font-family:sans-serif;
-    background-image: 
-    linear-gradient(to bottom,
+    background-image:  linear-gradient(to bottom,
     #dcdcdc 50%,
     #e9e9e9 50% );
-} 
+}
 main{
-    width: 300px;
-    height: max-content;
-    min-height: 300px;
-    background-color: #f7f7f7;
-    padding: 30px;
-    border-radius: 10px;
     box-shadow: 0px 30px 30px #5555;
-    box-sizing: border-box;
-}
-main form{
-    border: 1px solid #5553;
-    display: flex;
-    justify-content: space-between;
-    border-radius: 30px;
-}
-main form input ,main form button{
-    border: none;
-    background-color: transparent;
-    outline: none;
-    padding: 10px;
-}
-main form svg{
-opacity: 0.7;
-}
-main .results{
-    text-align: center;
-    padding-top: 20px;
-}
-main .results .name{
-    font-weight: bold;
-    font-size: large;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap:18px;
 }
 main .temperature svg{
     filter: drop-shadow(0 10px 5px #000);
 }
-main .temperature figcaption{
-    font-size: 3em;
-}
 main .description{
     padding:10px 0 30px;
 }
-main ul{
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 10px;
-}
 main li{
-    padding:20px 10px;
-    border-radius: 5px;
-    background-color: #f78a55;
-    background-image: 
-    linear-gradient(to bottom,
-    transparent 50%,
-    #0005 50%
-    );
-}
-main ul svg{
-    display: block!important;
-    margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    fill: #fff;
-}
-main li:nth-child(2){
-    background-color: #b56291;
-}
-main li:nth-child(3){
-    background-color: #485676;
-}
-.body{
- place-content: center;
-     min-height: 100vh;
-    font-family:sans-serif;
-    background-image: 
-    linear-gradient(to bottom,#dcdcdc 50%,#e9e9e9 50% );
-}
-      .circle{
-        place-self: center;
-        width: 60px;
-        height: 60px;
-        border-radius:50% ;
-        border: 4px solid #fff;
-        border-top-color: #b56291;
-        animation: spin 1s linear infinite;
-    }
-    
-    @keyframes spin{
-       to{
-        transform: rotate(360deg);
-       } 
-    }
-.loader2{
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
- align-items: center;
- color: #b56291;
-}
-.w-logo{ 
- justify-self: center;
- font-size: 2.5em;
-}
-.line{
-    width:4rem;
-    height: 4px;
-    background-color: #b56291;
+background-image: 
+linear-gradient(to bottom,
+transparent 50%,
+#0005 50%
+);
 }
