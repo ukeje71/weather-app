@@ -13,8 +13,8 @@ form.addEventListener('submit',(event) => {
     }
 })
 
-let id='9caba1bb58bdfca7cc24fd8fea34e1ef';
-let url=' https://api.openweathermap.org/data/2.5/weather?q=${city}&appid='+ id;
+let id='9b89417f1cde6a57c878c774a4fe2746';
+let url='https://api.openweathermap.org/data/2.5/weather?units=metric&appid=' + id;
 const  searchWeather = () =>{ 
  fetch(url + '&q=' + valueSearch.value)
  .then(responsive =>responsive.json())
