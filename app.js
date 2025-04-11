@@ -6,6 +6,8 @@ let cloudy =document.getElementById("cloudy");
 let humidity =document.getElementById("humidity");
 let pressure =document.getElementById("pressure");
 let form = document.querySelector("form");
+let flag=document.getElementById("flag");
+let weather =document.getElementById("weather");
 form.addEventListener('submit',(event) => {
     event.preventDefault();
     if (valueSearch.value != ''){
@@ -20,5 +22,13 @@ const  searchWeather = () =>{
  .then(responsive =>responsive.json())
  .then(data => {
     console.log(data);
+
+    if(data.cod ==200){
+        city.innerText = data.name;
+        flag.src ='https://flagsapi.com/'+data.sys.country+'/shiny/32.png';
+        weather.src ='http://openweathermap.org/img/w/'+data.weather[0].icon+'.png'
+        temperature.textContent=data.main.temp;
+         
+    }
  })
 }

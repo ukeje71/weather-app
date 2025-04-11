@@ -13,9 +13,9 @@
   </head>
    <body class="flex min-h-screen items-center justify-center font-serif">
     <!-- main -->
-    <main class="w-75 max-h-max min-h-96 p-7.5 rounded-2xl bg-[#f7f7f7] b-">
+    <main class="w-75 max-h-max min-h-96 p-7.5 rounded-2xl bg-[#f7f7f7]  animate-pulse">
         <form action="#" class="flex justify-between rounded-3xl p-1.5 border">
-            <input class="border-0 bg-transparent outline-0 p-1.5" type="search" name="search" id="valueSearch" id="valueSearch" autocomplete="off">
+            <input class="border-0 bg-transparent outline-0 p-1.5" type="search" name="search" id="valueSearch" autocomplete="off">
             <button class="border-0 bg-transparent outline-0 p-1.5">
                 <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z"></path></svg>
             </button>
@@ -23,16 +23,16 @@
 
         <section class="results text-center pt-7.5">
             <figure class="name font-bold text-2xl flex justify-center items-center  gap-4.5">
-                <figcaption id="city">London</figcaption>
+                <figcaption  id="city">London</figcaption>
                 <!-- <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M3 3H12.382C12.7607 3 13.107 3.214 13.2764 3.55279L14 5H20C20.5523 5 21 5.44772 21 6V17C21 17.5523 20.5523 18 20 18H13.618C13.2393 18 12.893 17.786 12.7236 17.4472L12  16H5V22H3V3Z"></path></svg> -->
-                 <img src="https://flagsapi.com/GB/shiny/32.png" alt="flagsapi">
+                 <img  id="flag" src="https://flagsapi.com/GB/shiny/32.png" alt="flagsapi">
             </figure>
 
-            <figure class="temperature" id="temperature">
+            <figure class="temperature">
                 <!-- <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="140" height="140" fill="currentColor"><path d="M5 16.9297C2.60879 15.5465 1 12.9611 1 10C1 5.58172 4.58172 2 9 2C12.3949 2 15.2959 4.11466 16.4576 7.09864C16.7951 7.0339 17.1436 7 17.5 7C20.5376 7 23 9.46243 23 12.5C23 15.0176 21.3085 17.14 19 17.793V15.6632C20.1825 15.1015 21 13.8962 21 12.5C21 10.567 19.433 9 17.5 9C16.5205 9 15.6351 9.40232 14.9998 10.0507C14.9999 10.0338 15 10.0169 15 10C15 6.68629 12.3137 4 9 4C5.68629 4 3 6.68629 3 10C3 11.777 3.7725 13.3736 5 14.4722V16.9297ZM7 16H9V20H7V16ZM15 16H17V20H15V16ZM11 19H13V23H11V19Z"></path></svg> -->
-                 <img src="http://openweathermap.org/img/w/10d.png" alt="Weather Image" class="w-30  backdrop-blur-2xl content-center flex justify-center">
+                 <img id="weather" src="http://openweathermap.org/img/w/10d.png" alt="Weather Image" class="w-30  backdrop-blur-2xl  flex justify-center  ">
                 <figcaption class="text-4xl">
-                    <span>31</span>
+                    <span id="temperature">31</span>
                     <sup>o</sup>
                 </figcaption>
             </figure>
