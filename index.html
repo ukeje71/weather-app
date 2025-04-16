@@ -6,48 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>DAY-DICT</title>
+    <link rel="stylesheet" href="./tailwind/app.css">
   </head>
-  <body>
-    <style>
-body{
-place-content: center;
-     min-height: 100vh;
-    font-family:sans-serif;
-    background-image: 
-    linear-gradient(to bottom,#dcdcdc 50%,#e9e9e9 50% );
-}
-      .circle{
-        width: 50px;
-        height: 50px;
-        border-radius:50% ;
-        border: 3px solid #0f0f0f24;
-        border-top-color: #b56291;
-        animation: spin 1s linear infinite;
-        place-self: center;
-    }
-    
-    @keyframes spin{
-       to{
-        transform: rotate(360deg);
-       } 
-    }
-.loader2{
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
- align-items: center;
- color: #b56291;
-}
-.w-logo{ 
- justify-self: center;
-}
-.line{
-    width:4rem;
-    height: 2px;
-    background-color: #b56291;
-}
-    </style>
+  <body class="body ">
     <div class="cover">
       <div class="circle"></div>
     <div class="loader2">
@@ -58,3 +19,4 @@ place-content: center;
   </div>
   </body>
 </html>
+          
